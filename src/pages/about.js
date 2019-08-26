@@ -1,15 +1,17 @@
 import React from 'react';
+import {Link} from 'gatsby';
 
 import Layout from '../components/layout';
-import ArticleList from '../components/article-list';
 
 export default () => (
     <Layout>
         <div>
-        <h1>Welcome</h1>
-    <ArticleList />
+        <h1>About Page</h1>
+        <Link to='/about'>About</Link>
+        {' | '}
+        <Link to='/'>Index</Link>
+
     </div>
     </Layout>
     
 )
-
